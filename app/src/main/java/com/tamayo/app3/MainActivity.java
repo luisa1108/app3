@@ -19,6 +19,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        int[] fotoPerfil = {
+                R.drawable.duki,
+                R.drawable.lit,
+                R.drawable.tiago,
+                R.drawable.wos,
+                R.drawable.ysy,
+                
+
         // Obtener referencia al TextView donde se muestra el estado del mensaje
 
         // Inicializar la lista de correos electrónicos con datos de ejemplo
