@@ -5,10 +5,12 @@ import android.widget.TextView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+import androidx.annotation.Nullable;
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
-public class DetalleEmailActivity {
-    private TextView senderTextView, subjectTextView, contentTextView, dateTextView;
+public class DetalleEmailActivity extends AppCompatActivity {
+     TextView senderTextView, subjectTextView, contentTextView, dateTextView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +18,7 @@ public class DetalleEmailActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalle_email);
         Email email = getIntent().getParcelableExtra("email");
+
 
         // Obtener referencias a los TextView del layout
         senderTextView = findViewById(R.id.senderTextView);
